@@ -1,0 +1,111 @@
+.detail {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.detail_background {
+  position: fixed;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%) brightness(0.4);
+  z-index: -1;
+}
+
+
+.detail_content {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  backdrop-filter: blur(4px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.detail_header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.detail_user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.detail_avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 20%;
+  object-fit: cover;
+}
+
+.detail_user_info {
+  display: flex;
+  flex-direction: column;
+}
+
+.detail_user_name {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.detail_user_tag {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.detail_actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.detail_like {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  border-radius: 6px;
+  padding: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.detail_like:hover{
+  background-color: white;
+}
+
+.detail_like:hover .add_fv {
+  stroke: red;
+  fill: red;
+}
+
+.detail_download {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: yellow;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.detail_download:hover {
+  opacity: 0.65;
+}
+
+.detail_main_img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.4);
+}
