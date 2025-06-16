@@ -19,8 +19,17 @@ export interface UnsplashPhoto {
   };
   user: {
     name: string;
+    username: string;
+    profile_image: {
+      small: string;
+      medium: string;
+      large: string;
+    };
   };
   likes: number;
+  links: {
+    download: string;
+  };
 }
 
 export const fetchRandomImages = async (): Promise<UnsplashPhoto[]> => {

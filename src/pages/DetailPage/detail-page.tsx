@@ -21,6 +21,7 @@ export default function DetailPage() {
   }, [id]);
 
   const handleDownload = async () => {
+    if (!photo) return;
     try {
       const response = await fetch(photo.urls.full);
       const blob = await response.blob();
